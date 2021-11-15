@@ -1,0 +1,69 @@
+  @media screen and (max-width: 797px) {
+    #main input{
+      width: 28rem;
+    }
+    #main .child-div h2{
+      font-size: 32px;
+      padding: 0 3rem;
+    }
+  }
+
+  
+  
+  @media screen and (max-width: 571px) {
+    #main input{
+      width: 20rem;
+    }
+    #main .child-div h2{
+      font-size: 26px;
+    padding: 0 1rem;
+    }
+    #main .addEdit{
+      left: -2rem;
+      font-size: 20px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 410px) {
+    #Cards{
+      position: absolute;
+      left: -16px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 409px) {
+    #main input {
+      width: 19rem;
+    }
+    #main .child-div h2 {
+      font-size: 24px;
+    }
+    #Cards{
+      position: absolute;
+      left: -8px;
+    }
+  }
+  
+
+  
+  @media screen and (max-width: 359px) {
+    #main,#Cards{
+      display: none;
+    }
+    body{
+      background-color: white;
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    body::before {
+      content: "You Need to Upgrade Your Device";
+      position: absolute;
+      top: 17rem;
+      left: 13px;
+    }
+  }

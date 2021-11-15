@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background: #060822;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .child-div {
+  margin-top: 3rem;
+}
+
+#main .child-div h2 {
+    color: #fff;
+    font-size: 35px;
+  padding: 0 4rem;
+}
+#main .child-div h2 > span{
+  color: #50efef;
+}
+
+#main input{
+font-family: "Source Sans Pro", sans-serif;
+  width: 32rem;
+  height: 3.4rem;
+  padding: 20px;
+  font-size: 19px;
+  margin-top: 16px;
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  z-index: 1;
+} 
+
+#main .addEdit{
+position: relative;
+left: -3rem;
+background-color: #fff;
+z-index: 2;
+cursor: pointer;
+font-size: 25px;
+}
+
+#main .fa-edit {
+  color: rgb(47, 214, 122);
+}
+#main .fa-plus {
+  color: #337cff;
+}
+
+
+#Cards {
+  padding: 20px 9%;
+}
+
+#Cards .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+#Cards .box-container .box {
+  flex: 1 1 300px;
+  text-align: center;
+  background: #eee;
+  padding: 20px;
+  border-radius: 0px 45px 0px 45px;
+  border-top: 12px solid;
+  position: relative;
+}
+
+#Cards .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(3rem at 1rem 0);
+}
+
+
+/* Each Card colour */
+#Cards .box-container .box:nth-child(6n + 1) {
+    border-color: #2196f3;
+}
+#Cards .box-container .box:nth-child(6n + 2) {
+    border-color: #ff9800;
+}
+#Cards .box-container .box:nth-child(6n + 3) {
+    border-color: #ff0a0a;
+}
+#Cards .box-container .box:nth-child(6n + 4) {
+    border-color: #9c27b0;
+}
+#Cards .box-container .box:nth-child(6n + 5) {
+    border-color: #e91e63;
+}
+#Cards .box-container .box:nth-child(6n + 6) {
+    border-color: #673ab7;
+}
+
+/* Each Clip-path colour */
+#Cards .box-container .box:nth-child(6n + 1)::before {
+  background-color: #2196f3;
+}
+#Cards .box-container .box:nth-child(6n + 2)::before {
+  background-color: #ff9800;
+}
+#Cards .box-container .box:nth-child(6n + 3)::before {
+  background-color: #ff0a0a;
+}
+#Cards .box-container .box:nth-child(6n + 4)::before {
+  background-color: #9c27b0;
+}
+#Cards .box-container .box:nth-child(6n + 5)::before {
+  background-color: #e91e63;
+}
+#Cards .box-container .box:nth-child(6n + 6)::before {
+  background-color: #673ab7;
+}
+
+
+#Cards .box-container .box p {
+  font-size: 18px;
+  color: #666;
+  padding: 5px;
+  margin-top: 20px;
+  min-height: 6rem;
+  min-width: 17rem;
+}
+
+#Cards .box-container .box .number {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: azure;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+
+#Cards .box-container .box .todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+  float: right;
+}
+
+
+/* icons */
+#Cards .box-container .box .fa-edit, #Cards .box-container .box .fa-trash-alt{
+  cursor: pointer;
+  font-size: 20px;
+}
+#Cards .box-container .box .fa-edit:hover {
+  color: rgb(47, 214, 122);
+}
+#Cards .box-container .box .fa-trash-alt:hover {
+  color: red;
+}
