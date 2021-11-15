@@ -83,7 +83,7 @@ const Todo = () => {
 
   return (
     <>
-      // input sec
+      {/* input section */}
       <section id="main">
         <div className="child-div">
           <h2>
@@ -114,7 +114,7 @@ const Todo = () => {
       </section>
 
 
-      // Card sec
+      {/* Card section */}
       <section id="Cards">
         <div className="box-container">
 
